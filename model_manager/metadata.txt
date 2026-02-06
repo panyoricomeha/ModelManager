@@ -1,23 +1,31 @@
 [general]
-name=Model Manager
-qgisMinimumVersion=3.30
-qgisMaximumVersion=3.99
-description=A model management tool for registering, listing, executing, and managing favorites of QGIS Processing models (.model3).
-about=This plugin provides a centralized way to manage QGIS Processing models, including model registration, searching, execution, and favorite management.
+name=Layer Name Replacer
+qgisMinimumVersion=3.0
+description=A plugin to batch rename layer names based on a text file of replacement rules.
 version=1.0.0
-author=Rikuto Arita
-email=your.email@example.com
-homepage=https://example.com/model_manager
-repository=https://example.com/model_manager/repository
+author=panyoricomeha
+email=panyoricomeha@example.com
+
+about=This plugin reads a comma-separated replacement rules file (e.g., old,new) and performs batch renaming of all layer names accordingly.
+      By specifying a replacement file, you can efficiently and flexibly organize layer names.
+
+tracker=https://github.com/panyoricomeha/QGIS-Plugin-Layer-Name-Replacer
+repository=https://github.com/panyoricomeha/QGIS-Plugin-Layer-Name-Replacer
+
+# Recommended items:
+hasProcessingProvider=no
+changelog=1.0.0 Initial release. Added functionality to replace layer names.
+
+tags=layer names,batch processing,string replacement,QGIS,utility
+
+homepage=https://github.com/panyoricomeha/QGIS-Plugin-Layer-Name-Replacer
+category=Vector
 icon=icon.png
-category=Processing
-tags=processing,model,manager,automation,workflow
 experimental=False
 deprecated=False
+license=MIT
 
-[plugin]
-hasProcessingProvider=True
+# plugin_dependencies= 
 
-[processing]
-providerName=Model Manager
-providerDescription=Processing Model Management
+# If the plugin can run on QGIS Server.
+server=False
