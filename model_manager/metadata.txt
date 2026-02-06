@@ -1,0 +1,23 @@
+[general]
+name=Model Manager
+qgisMinimumVersion=3.30
+qgisMaximumVersion=3.99
+description=A model management tool for registering, listing, executing, and managing favorites of QGIS Processing models (.model3).
+about=This plugin provides a centralized way to manage QGIS Processing models, including model registration, searching, execution, and favorite management.
+version=1.0.0
+author=Rikuto Arita
+email=your.email@example.com
+homepage=https://example.com/model_manager
+repository=https://example.com/model_manager/repository
+icon=icon.png
+category=Processing
+tags=processing,model,manager,automation,workflow
+experimental=False
+deprecated=False
+
+[plugin]
+hasProcessingProvider=True
+
+[processing]
+providerName=Model Manager
+providerDescription=Processing Model Management
