@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/model_manager" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
